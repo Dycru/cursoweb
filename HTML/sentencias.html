@@ -1,32 +1,74 @@
 <!DOCTYPE html>
-
 <html>
-
 <body>
-
 <h1>Sentencias de JavaScript </h1>
-
 <p>Un <strong>programa JavaScript </strong> es una lista de <b>sentencias</b> para ser
 ejecutadas por un ordenador.</p>
-
 <p id="prova"></p>
-
 <script>
-
 var x, y, z; // Declaradas 3 variables
-
+//Equivalente a 3 lineas de código 
+// var z;
+// var y;
+// var z;
 x = 2; // Asignamos el valor 2 a x
-
 y = 3; // Asignamos el valor 3 a y
-
 z = x + y; // Asignamos la suma de x más y a z
+document.getElementById("prova").innerHTML = "El valor de z es " + z + ".";
+/* x almacena el valor 2
+y almacena el valor 3
+z almacena el valor 5 */
+var x = 2;
+var y = 3;
+var z = x + y;
+// Los identificadores pueden tener el nombre que queramos
+var price1 = 3;
+var price2 = 10;
+var total = price1 + price2;
+// En este ejemplo añadiremos 5 el valor anterior
+var x = x + 5; //vale 7
+var x = x + 5; 
+// Declaración (Creación de variable)
+var nombre;
+// Asignación (darle valor a la variable)
+nombre= " Marc";
+// En la misma línea podemos separar por comas
+var v1 = "Txt", v2 = "txt2", v3 = 134;
+document.write(x + nombre + "<br>");
+var alto= 20;
+var ancho=10;
+document.write("El alto de tu ventana es: " + alto + "<br>");
+document.write("El ancho de tu ventana es: " + ancho + "<br>");
+var cm2=alto*ancho;
+document.write("Los cm2 de tu ventana son: " + cm2 + "<br>");
+var total=cm2*10; // Cuesta 10€/cm2
+document.write("Tu presupuesto es de: " + total + " €<br>");
+document.write("Muchas gracias por consultar tu presupesto, " + nombre + "<br>");
 
-document.getElementById("prova").innerHTML =
+//Texto "cadenas de texto" "strings" en inglés
 
-“El valor de z es " + z + ".";
+var cms = "WordPress"; // Comillas dobles
+var cms = 'WordPress'; // Comillas simples
 
+// Cuando hay comillas dobles en el texto
+
+var cms = 'El cms se llama "WordPress"';
+document.write(cms);
+
+// Propiedad lenght devolveria em número la extensión del string, en el ejemplo= 26
+
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+console.log(sln);
+
+// JavaScript no entenderia esta cadena de texto
+
+//var x = "We are the so-called "Vikings" from the north.";
+
+// Deberiamos escribirlo asi:
+
+var x = "We are the so-called \"Vikings\" from the north.";
+console.log(x);
 </script>
-
 </body>
-
 </html>
